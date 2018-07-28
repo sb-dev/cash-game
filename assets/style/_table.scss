@@ -1,0 +1,17 @@
+.table {
+  position: relative;
+  height: 50%;
+  width: 80%;
+  margin: 10% auto;
+  border: 8px solid #E2B900;
+  border-radius: 25rem;
+
+  .logo {
+    color: #78D7B7;
+    font-family: 'Playfair Display';
+    position: relative;
+    top: 50%;
+    font-size: 45px;
+    text-align: center;
+  }
+}

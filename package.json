@@ -1,0 +1,26 @@
+{
+  "name": "cash-game",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "node server.js",
+    "build-css": "node-sass --include-path scss assets/style/main.scss public/css/style.css",
+    "watch-css": "nodemon -e scss -x 'npm run build-css'"
+  },
+  "author": "Samir Benzenine",
+  "license": "MIT",
+  "dependencies": {
+    "animejs": "^2.2.0",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "express": "latest",
+    "jquery": "^3.2.1",
+    "jquery-ui": "^1.12.1",
+    "jquery-ui-dist": "^1.12.1",
+    "mime-types": "^2.1.17",
+    "node-sass": "^4.7.2",
+    "uglify-js": "^1.3.5"
+  },
+  "devDependencies": {
+    "nodemon": "^1.14.1"
+  }
+}

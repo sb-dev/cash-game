@@ -1,0 +1,68 @@
+body {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #00b8b8;
+  background-image: url("felt.png");
+  overflow: hidden; }
+
+.table-center {
+  position: relative;
+  height: 50%;
+  width: 80%;
+  margin: 10% auto;
+  border: 8px solid #E2B900;
+  border-radius: 25rem; }
+
+.logo {
+  color: #78D7B7;
+  font-family: 'Playfair Display';
+  position: relative;
+  top: 50%;
+  font-size: 45px;
+  text-align: center; }
+
+.player {
+  position: absolute;
+  width: 150px;
+  height: 30px;
+  background: rgba(45, 40, 52, 0.5);
+  border-radius: 4px;
+  box-shadow: 0 8px 6px -6px #434343;
+  z-index: 1000; }
+
+.player#current {
+  width: 100%;
+  height: 10%;
+  bottom: 0;
+  left: 0; }
+
+.player .name, .player .chips {
+  color: white;
+  text-align: left;
+  font-family: arial;
+  font-size: 21px;
+  line-height: 30px;
+  padding-left: 10px; }
+
+.player .chips {
+  font-size: 16px; }
+
+.card {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 50px;
+  height: 80px;
+  border-radius: 6px;
+  background: url("card.png");
+  background-size: cover; }
+
+.card.current {
+  z-index: 1001;
+  background: url("cards/AS.png");
+  background-size: cover; }
+
+/*# sourceMappingURL=main.css.map */

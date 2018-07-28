@@ -1,0 +1,48 @@
+.card {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+  left: 50%;
+  width: 50px;
+  height: 80px;
+  border-radius: 6px;
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.card.current {
+  z-index: 1001;
+}
+
+.card.flipped {
+  transform: rotateY(180deg);
+}
+
+.front, .back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 80px;
+  border-radius: 6px;
+}
+
+.back {
+  z-index: 2;
+  transform: rotateY(0deg);
+  background: url('/public/img/card-cover.png');
+  background-size: cover;
+}
+
+.front {
+  transform: rotateY(180deg);
+}
+
+#bottomCardDeck {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 50px;
+  height: 80px;
+}
